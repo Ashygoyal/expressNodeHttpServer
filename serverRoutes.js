@@ -5,15 +5,13 @@ app.get('/', function(req, res){
     res.send('<b> My Second Express HTTP Server');
 });
 
-
-
 // Handling Routes and Request Methods
 
 // Add a Route
 app.route('/avengers')
-.get(function(req, res){
+/*.get(function(req, res){
     res.send('Get the Avengers!');
-})
+})*/
 .post(function(req, res){
     res.send('Send the Avengers!');
 })
