@@ -44,6 +44,8 @@ app.get('/error', function(req, res){
 
 app.use(function(req, res, next){
     res.status(404).send('URL aint defiend.!!');
+    res.header('Content-Type', 'application/json');
+    next();
 });
 
 app.listen(3300, function(){
